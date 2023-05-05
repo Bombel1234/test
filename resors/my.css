@@ -1,0 +1,20 @@
+
+.window-logo{
+	max-width: 500px;
+	height: 450px;
+	background-color: aqua;
+	position: absolute;
+	z-index: 5;
+	top: 30%;
+	left: 35%;
+
+}
+.swipper-wrraper{
+	background-color: rgba(11, 11, 11, 0);	
+}
+.background{
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
