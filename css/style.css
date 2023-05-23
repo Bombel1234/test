@@ -116,7 +116,7 @@ form{
         font-size: 50px;
     }
     form{
-        width: 500px;
+        max-width: 400px;
     }
 }
 
