@@ -2,47 +2,55 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Login Eko</title>
-	<link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-	<!-- <div class="box">
-		<form autocomplete="off">
-			<h2>Logowanie</h2>
-			<div class="inputBox">
-				<input type="text" required="required" id="entry-name">
-				<span>UserName</span>
-				<i></i>
-			</div>
-			<div class="inputBox">
-				<input type="password" required="required" id="entry-password">
-				<span>Password</span>
-				<i></i>
-			</div>
-			
-			<div class="btn">
-				<a class="my-link" href="home.html" onclick="return passWord()">Login</a>
-			</div>
-		</form>
-	</div> -->
-	<div class="top">
-		<!-- <h1 class="title">Background</h1>
-		<a class="mybtn">Auto Car</a> -->
-	</div>
-	<div class="window-logo">
-		<input type="text" placeholder="Twoje imię">
-		<input type="text" placeholder="Password">
-	</div>
-	<div class="swipper-wrraper">
-		<div class="background" style="background-image: url('resors/window.jpg');">
-		</div>
-	</div>
+    <div class="win-logo">
+        <h1 class="logo-title">Stolarnia w Eko-okna</h1>
+        <form autocomplete="off">
+            <div class="haslo" id="my-haslo">
+                <h2 class="form_title">Logowanie</h2>
+                <input class="my-input" type="password" id="name">
+                <a class="my-link" href="home.html" onclick="return clickLink()">Enter</a>
+            </div>
+        </form>
+    </div>
+    
+    <dialog class="win-dialog" id="open-dialog">
+        <h3 class="title-dialog">UWAGA: Niewlaściwe HASŁO</h3>
+        <button class="close-btn" onclick="close_dialog()">Close</button>
+    </dialog>
 
 
-	<script src="js/index.js"></script>
+    <script>
+        function clickLink() {
+            let name = document.getElementById('name');
+            let myHaslo = name.value;
+            let a = document.querySelector('dialog');
+            if (myHaslo === '123') {
+                a.style.margin = '500px auto';
+                return true;
+            }
+            else {
+                a.style.margin = '-500px auto';
+                return false;
+            }
+        }
+        function close_dialog() {
+            let a = document.querySelector('dialog');
+            a.style.margin = '500px auto';
+        }
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
