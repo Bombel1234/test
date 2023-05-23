@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-home.css">
 </head>
+
 <body>
-    <h2>khbjhbjhbjhbjhbjhbkjbh</h2>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <img style="margin-right: 40px;" src="images/eko_okna_logo.svg" alt="">
+                    <div class="gross">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Programy</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Instrukcje</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Zmiany</a>
+                        </li>
+                    </div>
+
+                    <div class="menu-burger" onclick="main()">
+                        <hr class="line">
+                        <hr class="line">
+                        <hr class="line">
+                        <hr class="line">
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+        function main(){
+            const a = document.querySelector('.gross');
+            const b = document.querySelector('.menu-burger');
+            a.style.display = 'block';
+            b.style.display = 'none';
+        }   
+    </script>
 </body>
+
 </html>
