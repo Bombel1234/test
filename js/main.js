@@ -1,8 +1,9 @@
-let a = document.getElementById('entry').value;
-const dialog = document.getElementById("myDialog");
+
 
 function showDialog(){
-
+    let a = document.getElementById('entry').value;
+    const dialog = document.getElementById("myDialog");
+    
     if (a == '123'){
         document.location.href = 'home.html';
     }
@@ -14,6 +15,7 @@ function showDialog(){
     
 }
 function closeDialog() { 
+    const dialog = document.getElementById("myDialog");
     dialog.close();
     dialog.style.display = 'none'; 
 } 
