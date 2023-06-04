@@ -49,7 +49,7 @@ function myfunc_std(width) {
     }
     else if (width > 1400 && width <= 1600) {
         showDialog();
-        document.querySelector('.title-dialog').innerText = 'Uwaga:  Dodatkowa nożyca!!!';
+        document.querySelector('.title-dialog').innerText = 'Uwaga:  Dodatkowa rozwórka!!!';
         document.getElementById('dol').innerText = '600   400';
     }
 
