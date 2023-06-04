@@ -1,0 +1,111 @@
+<div class="row">
+        <div class="card" style="width: 18rem;">
+          <img src="resors/grzybkowa rolka dociskająca.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Grzybkowa rolka dociskająca.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/narożnik.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Narożnik.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/blokada blędnego polożenia klamki.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Blokada blędnego polożenia klamki</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/nt rolka reglująca V.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">NT rolka regulująca V</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/nt rolka ryglująca E.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">NT rolka regulująca E</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/wspornik rozwórki.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Wspornik rozwórki</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/wspornik zawiasu dolnego.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Wspornik zawiasu dolnego</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/zaczep rozwierno uchylny.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Zaczep rozwierno uchylny</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/zaczep antywyważeniowy.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Zaczep antywyważeniowy</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/zasuwnica.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Zasuwnica</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/zatrzask balkonowy.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Zatrzask balkonowy</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/zawiasy dolne.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Zawiasy dolne</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/dodatkowy uchyl.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Dodatkowy uchyl</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/naskr.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Ogranicznik uchyłu - element na skrzydle</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/naskry.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Ogranicznik uchyłu - element na skrzydle</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/ogranicznik-uchylenia.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Ogranicznik uchylenia</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/satf.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Magnetyczny zatrzask</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="resors/zatr-magn.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Zaczep magnetyczny</p>
+          </div>
+        </div>
+
+      </div>
