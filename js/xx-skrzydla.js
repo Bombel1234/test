@@ -51,7 +51,7 @@ function myfunk_st1(width) {
     }
     else if (width > 1400 && width <= 1600) {
         showDialog();
-        document.querySelector('.title-dialog').innerText = 'Uwaga:  Dodatkowa nożyca!!!';
+        document.querySelector('.title-dialog').innerText = 'Uwaga:  Dodatkowa rozwórka!!!';
         document.getElementById('my-dol').innerText = '600   400';
     }
 
