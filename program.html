@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Lato:ital,wght@0,400;1,900&family=Oswald:wght@400;500&family=PT+Serif:ital,wght@1,700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Lato:ital,wght@0,400;1,900&family=Oswald:wght@400;500&family=PT+Serif:ital,wght@1,700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/program.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img src="resors/eko_okna_logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="program.html">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rysunki.html">Rysunki</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="one-section">
+      <div class="opis-tresci">
+        <h3 class="one-title">Witamy na stolarni Eko-Okna</h3>
+        <p class="one-opis">Na tej stronie mamy różnie programy,
+          króre ułatfiają pracę zwykłych pracowników - okuwaczy ram.
+          Dla okuwania ram pracownik kożysta z szablonów do okucia i
+          kartek z wymiarami w wrębie okuciowym skrzydeł.
+        </p>
+        <p class="one-opis">
+          Proponujemy takie programy:
+        </p>
+        <ol class="one-item">
+          <li>Program dla okucia ram jednoskrzydłowych</li>
+          <li>Program dla okucia ram dwóskrzydłowych</li>
+          <li>Program - numer rozwórki kryty zawias?</li>
+        </ol>
+      </div>
+    </section>
+    <section class="two-section">
+      <h3 class="two-title">Program dla okucia jednoskrzydłowych ram</h3>
+      <h3 class="two-title anim" id="typ-okucia">Poziom zabezpieczenia okucia</h3>
+      <div class="two-box">
+        <div class="two-input">
+          <input type="number" maxlength="4" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="entry" id="entry-width" placeholder="Szerokość skrzydła">
+          <input type="number" maxlength="4" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="entry" id="entry-height" placeholder="Wysokość skrzydła">
+          <input type="number" maxlength="4" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="entry" id="klamka" placeholder="Klamka">
+          <button class="but" onclick="standart()">Standart</button>
+          <button class="but" onclick="erc_one()">Poz ER1</button>
+          <button class="but" onclick="erc_two()">Poz ER2</button>
+        </div>
+        <dialog class="dialogModal" id="myDialog">
+          <div class="kont">
+            <p class="title-dialog"></p>
+          </div>
+          <button class="close-dialog" onclick="closeDialog()">Close</button>
+        </dialog>
+        <div class="two-res-name">
+          <p class="res">Gora:</p>
+          <p class="res">Plecy:</p>
+          <p class="res">Zasuwnica:</p>
+          <p class="res">Dól:</p>
+          <p class="res">NSP:</p>
+        </div>
+        <div class="two-res" id="clear">
+          <p class="res gora" id="gora"></p>
+          <p class="res plecy" id="pl"></p>
+          <p class="res zas" id="zas"></p>
+          <p class="res dol" id="dol"></p>
+          <p class="res nsp" id="nsp"></p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="free-section">
+      <h3 class="two-title">Program dla okucia dwóskrzydlowych ram</h3>
+      <h3 class="two-title anim" id="free-poziom">Poziom zabezpieczenia okucia</h3>
+      <div class="xx-container">
+        <div class="free-entry">
+          <input class="ent-but style-input" maxlength="4" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" id="xx-input-width" placeholder="Szerokość skrydła">
+          <input class="ent-but style-input" maxlength="4" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" id="xx-input-height" placeholder="Wysokość skrydła">
+          <button class="ent-but xx" onclick="func_standart()">Standart</button>
+          <button class="ent-but xx" onclick="func_er1()">Poziom ER 1</button>
+          <button class="ent-but xx" onclick="func_er2()">Poziom ER 2</button>
+        </div>
+        <dialog class="dialogModal" id="myDialog">
+          <div class="kont">
+            <p class="title-dialog"></p>
+          </div>
+          <button class="close-dialog" onclick="closeDialog()">Close</button>
+        </dialog>
+        <div class="info-stron">
+          <p class="text-str">Góra</p>
+          <p class="text-str">Plecy</p>
+          <p class="text-str">Słupek</p>
+          <p class="text-str">Dól</p>
+        </div>
+        <div class="free-result">
+          <p class="my-info gora" id="my-gora"></p>
+          <p class="my-info plecy" id="my-plecy"></p>
+          <p class="my-info" id="my-dot"></p>
+          <p class="my-info dol" id="my-dol"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/program-one.js"></script>
+  <script src="js/xx-skrzydla.js"></script>
+
+</body>
+
+</html>
