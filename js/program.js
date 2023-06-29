@@ -75,9 +75,9 @@ function desingo(params) {
             document.querySelector('.title-dialog').innerText = 'Okuwanie identyczne';
             document.querySelector('.title-dialog1').innerText = 'Dodatkowa rozwórka';
             document.querySelector('.tresc-dialog').innerText = 'Rozwórka 500';
-        }
-        
+        }  
     }
+    
 }
 
 
